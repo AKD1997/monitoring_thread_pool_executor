@@ -17,7 +17,7 @@ public class MyRejectedExecutionHandler implements RejectedExecutionHandler {
 			RejectedExecutionHandlerExample.alternateExecutor.execute(worker);
 			System.out.println(worker.toString() + " Execution Started : " + LocalDateTime.now());
 		} catch (Exception e) {
-			System.out.println("Failure to Re-exicute : " + e.getMessage());
+			System.out.println("Failure to Re-exicute: " + e.getMessage());
 		}
 	}
 
